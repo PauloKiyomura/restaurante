@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gastos e Despesas</title>
+    <link rel="stylesheet" href="despesa.css">
+</head>
+<body>
+    <h1>Controle de Gastos e Despesas</h1>
+    
+    <!-- Botão para ir para a página de Fiado -->
+    <a href="fiado.html">
+        <button id="fiadoBtn">Ir para Fiado</button>
+    </a>
+
+    <div class="container">
+        <div class="opcoes">
+            <h3>Registrar Despesa</h3>
+            <div>
+                <input type="text" id="descricao" placeholder="Descrição da despesa">
+                <input type="number" id="valor" placeholder="Valor">
+            </div>
+            <button onclick="registrarDespesa()">Registrar</button>
+        </div>
+        <div class="opcoes">
+            <h3>Relatório</h3>
+            <button onclick="mostrarRelatorio()">Mostrar Relatório</button>
+        </div>
+    </div>
+
+    <div class="despesas-container">
+        <h3>Despesas Registradas</h3>
+        <ul id="despesasLista" class="despesas-lista"></ul>
+    </div>
+
+    <script src="despesa.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - Teste</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <h1>Controle de Vendas</h1>
+
+    <div class="container">
+        <div class="opcoes">
+            <h3>Pratos</h3>
+            <button class="opcao" data-preco="15.50" data-nome="Self Service">Self Service - R$ 15,50</button>
+            <button class="opcao" data-preco="12.00" data-nome="Kilo">Kilo - R$ 12,00</button>
+            <button class="opcao" data-preco="20.00" data-nome="Prato Feito">Prato Feito - R$ 20,00</button>
+          <button class="opcao" data-preco="14.00" data-nome="Marmita Pequena">Marmita Pequena - R$ 14,00</button>
+            <button class="opcao" data-preco="16.00" data-nome="Marmita Média">Marmita Média - R$ 16,00</button>
+          <button class="opcao" data-preco="18.00" data-nome="Marmita Grande">Marmita Grande - R$ 18,00</button>
+            
+            <button class="opcao" data-preco="10.00" data-nome="Salada">Salada - R$ 10,00</button>
+        </div>
+
+        <div class="opcoes">
+            <h3>Doces</h3>
+            <button class="opcao" data-preco="7.50" data-nome="Doce de Leite">Doce de Leite - R$ 7,50</button>
+            <button class="opcao" data-preco="5.00" data-nome="Brigadeiro">Brigadeiro - R$ 5,00</button>
+        </div>
+
+        <div class="opcoes">
+            <h3>Bebidas</h3>
+            <button class="opcao" data-preco="5.00" data-nome="Coca Lata">Coca Lata - R$ 5,00</button>
+            <button class="opcao" data-preco="3.50" data-nome="Suco">Suco - R$ 3,50</button>
+            <button class="opcao" data-preco="4.00" data-nome="Água">Água - R$ 4,00</button>
+        </div>
+    </div>
+
+    <div>
+        <h3>Quantidade: <input type="number" id="quantidade" value="1" min="1"></h3>
+        <h3>Valor Total: R$ <span id="valorTotal">0.00</span></h3>
+        <button id="corrigir" class="corrigir">Corrigir Última Seleção</button>
+    </div>
+
+    <div>
+        <h3>Resumo de Venda:</h3>
+        <ul id="resumoVenda"></ul>
+    </div>
+
+    <button id="finalizar">Finalizar Pedido</button>
+    <!-- Novo botão de Relatório -->
+    <a href="relatorio.html">
+        <button id="relatorio">Relatório</button>
+    </a>
+
+    <script src="dash.js"></script>
+</body>
+</html>

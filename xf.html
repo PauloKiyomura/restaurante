@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Despesas</title>
+    <link rel="stylesheet" href="xf.css">
+</head>
+<body>
+    <h1>Relatório de Despesas</h1>
+    
+    <!-- Botão de Voltar -->
+    <a href="despesas.html">
+        <button id="voltarRelatorio">Voltar para Despesas</button>
+    </a>
+
+    <div class="filtro-container">
+        <h3>Filtrar por Mês e Ano</h3>
+        <!-- Adicione esses campos no HTML -->
+<select id="filtroAno">
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+</select>
+
+<select id="filtroMes">
+  <option value="01">Janeiro</option>
+  <option value="02">Fevereiro</option>
+  <option value="03">Março</option>
+  <option value="04">Abril</option>
+  <option value="05">Maio</option>
+  <option value="06">Junho</option>
+  <option value="07">Julho</option>
+  <option value="08">Agosto</option>
+  <option value="09">Setembro</option>
+  <option value="10">Outubro</option>
+  <option value="11">Novembro</option>
+  <option value="12">Dezembro</option>
+</select>
+
+<!-- Lista de despesas -->
+<ul id="relatorioLista"></ul>
+
+
+        <button onclick="filtrarRelatorio()">Filtrar</button>
+    </div>
+
+    <div class="relatorio-container">
+        <h3>Relatório Organizado</h3>
+        <ul id="relatorioLista" class="relatorio-lista"></ul>
+    </div>
+
+    <script src="xf.js"></script>
+</body>
+</html>

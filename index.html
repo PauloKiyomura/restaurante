@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Bem-vindo ao Restaurante Elegante</h1>
+            <p>Uma experiência gastronômica única e sofisticada</p>
+        </div>
+    </section>
+
+    <!-- Cardápio Section -->
+    <section id="cardapio" class="section-padding">
+        <div class="section-header">
+            <h2>Nosso Cardápio</h2>
+        </div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200" alt="Prato 1">
+                <h3>Prato Principal</h3>
+                <p>Deliciosa carne com molho especial</p>
+                <p class="price">R$ 95,00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200" alt="Prato 2">
+                <h3>Entrada</h3>
+                <p>Salada fresca com vinagrete</p>
+                <p class="price">R$ 45,00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200" alt="Prato 3">
+                <h3>Sobremesa</h3>
+                <p>Brownie com sorvete</p>
+                <p class="price">R$ 25,00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section-padding">
+        <div class="section-header">
+            <h2>Sobre Nós</h2>
+        </div>
+        <p>xxx</p>
+    </section>
+
+    <!-- Reservas Section -->
+    <section id="reservas" class="section-padding">
+        <div class="section-header">
+            <h2>Faça Sua Reserva</h2>
+        </div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+            <label for="pessoas">Número de Pessoas:</label>
+            <input type="number" id="pessoas" required>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section-padding">
+        <div class="section-header">
+            <h2>Entre em Contato</h2>
+        </div>
+        <div class="contato-info">
+            <p><strong>Endereço:</strong> Centro</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Email:</strong> contato@restaur</p>
+        </div>
+        <form>
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Restaurante  | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

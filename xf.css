@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.opcoes {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.opcoes:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #21867a;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#relatorioBtn {
+    font-size: 1.1rem;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+#relatorioBtn:hover {
+    background-color: #fb8c00;
+    transform: translateY(-3px);
+}
+
+#relatorioBtn:active {
+    transform: translateY(1px);
+}
+
+#voltarRelatorio {
+    font-size: 1.1rem;
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+#voltarRelatorio:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+}
+
+#voltarRelatorio:active {
+    transform: translateY(1px);
+}
+
+input, select {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+input:focus, select:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 10px rgba(42, 157, 143, 0.5);
+}
+
+.despesas-lista,
+.relatorio-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.despesas-lista li,
+.relatorio-lista li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.despesas-lista li:last-child,
+.relatorio-lista li:last-child {
+    border-bottom: none;
+}
+
+/* Remover o sublinhado de todos os links */
+a {
+    text-decoration: none;
+}

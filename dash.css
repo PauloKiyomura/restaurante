@@ -1,0 +1,167 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.opcoes {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #21867a;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+input {
+    width: 60px;
+    font-size: 1.2rem;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+#finalizar {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* largura ajustada */
+    margin: 10px auto; /* centraliza o botão */
+    display: block; /* garante que o botão seja um bloco */
+}
+
+#finalizar:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+#finalizar:active {
+    transform: translateY(1px);
+}
+
+/* Estilo do botão corrigir */
+.corrigir {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    width: 280px; /* largura ajustada */
+    margin: 10px auto; /* centraliza o botão */
+    display: block; /* garante que o botão seja um bloco */
+}
+
+.corrigir:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.corrigir:active {
+    transform: translateY(1px);
+}
+
+
+.corrigir:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.corrigir:active {
+    transform: translateY(1px);
+}
+
+#resumoVenda {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#resumoVenda li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#resumoVenda li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo do botão de Relatório */
+#relatorio {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: 200px; /* largura ajustada */
+    margin: 10px auto; /* centraliza o botão */
+    display: block; /* garante que o botão seja um bloco */
+}
+
+#relatorio:hover {
+    background-color: #fb8c00;
+    transform: translateY(-3px);
+}
+
+#relatorio:active {
+    transform: translateY(1px);
+}
+]

@@ -1,0 +1,269 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fonte e cores principais */
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Estilo para o cabeçalho e navegação */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e94e77;
+}
+
+/* Hero Section (imagem de fundo e texto) */
+.hero {
+    background-image: url('restaurante.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Seções de conteúdo */
+.section-padding {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Cardápio */
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: calc(33% - 20px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu-item p {
+    margin: 10px 15px;
+    color: #1a1a1a;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e94e77;
+    margin-bottom: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column; /* Coloca os inputs e o botão um embaixo do outro */
+    align-items: center; /* Centraliza os itens */
+    gap: 25px; /* Aumenta o espaço entre os elementos do formulário */
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário */
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 30px 40px; /* Espaçamento interno do formulário */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 2px solid #000; /* Adiciona o contorno preto */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+}
+
+form:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+form:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Estilo dos Inputs e Textarea */
+input, textarea {
+    width: 100%; /* Ajusta para o preenchimento completo da largura disponível */
+    padding: 14px 20px; /* Aumenta o padding para mais conforto */
+    margin: 10px 0; /* Espaçamento entre os campos */
+    border: 2px solid #ccc; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #f9f9f9; /* Fundo claro para os campos */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave nos campos */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito de foco nos campos */
+input:focus, textarea:focus {
+    border-color: #e94e77; /* Cor de destaque ao focar */
+    box-shadow: 0 0 8px rgba(233, 78, 119, 0.5); /* Sombra suave ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do Placeholder */
+input::placeholder, textarea::placeholder {
+    color: #bbb; /* Cor mais suave para o placeholder */
+    font-style: italic; /* Coloca o placeholder em itálico */
+    transition: color 0.3s ease;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent; /* Oculta o placeholder ao focar */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #e94e77; /* Cor de fundo vibrante para o botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 14px 20px; /* Aumenta o tamanho do botão para melhor clique */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer;
+    width: 100%; /* O botão ocupa a largura completa */
+    max-width: 500px; /* Limita o tamanho máximo */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #d44166; /* Cor mais clara no hover */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 80%;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        width: 90%; /* Aumenta a largura do formulário em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

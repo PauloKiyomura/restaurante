@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Fiado</title>
+    <link rel="stylesheet" href="despesa.css">
+</head>
+<body>
+    <h1>Sistema de Fiado</h1>
+
+    <!-- Botão de Voltar -->
+    <a href="relatorio.html">
+        <button id="voltar">Voltar para Despesas</button>
+    </a>
+
+    <div class="container">
+        <div class="opcoes">
+            <h3>Registrar Fiado</h3>
+            <div>
+                <input type="text" id="descricaoFiado" placeholder="Descrição do fiado">
+                <input type="number" id="valorFiado" placeholder="Valor">
+            </div>
+            <button onclick="registrarFiado()">Registrar Fiado</button>
+        </div>
+    </div>
+
+    <h3>Fiado Registrado</h3>
+    <ul id="fiadoLista" class="fiado-lista"></ul>
+
+    <script src="despesa.js"></script>
+</body>
+</html>
