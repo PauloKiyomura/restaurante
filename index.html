@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Elegante</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .dash-button-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .dash-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d35400;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .dash-button:hover {
+            background-color: #e67e22;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Botão para Dash de Vendas -->
+    <div class="dash-button-container">
+        <a href="dashvenda.html" class="dash-button">Acessar Dashboard de Vendas</a>
+    </div>
 
     <!-- Menu de Navegação -->
     <header>
@@ -103,7 +128,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Restaurante  | Todos os direitos reservados</p>
+        <p>&copy; 2025 Restaurante | Todos os direitos reservados</p>
     </footer>
 
 </body>
